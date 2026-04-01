@@ -1,1 +1,9 @@
-
+index=*
+index=* sourcetype=WinEventLog:Security
+index=* sourcetype=WinEventLog:Application
+index=* sourcetype=WinEventLog:System
+index=* EventCode=4625
+index=* EventCode=4624
+index=* EventCode=4634
+index=* EventCode=4688
+index=* sourcetype=WinEventLog:Security EventCode=4625 | timechart span=1d count
